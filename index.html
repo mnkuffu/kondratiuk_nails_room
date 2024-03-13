@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-wrap"> 
+            <a class="header-logo-link" href="#"><img src="./photo/logo_nail.png" alt="" class="header-logo"></a> 
+            <nav class="header-nav">
+                    <ul class="header-list" id="left"> 
+                        <li class="header-items"><a href="./index.html" title="" target="_self" class="header-link">Головна</a></li> 
+                        <li class="header-items"><a href="./services.html" title="" target="_self" class="header-link">Послуги</a></li> 
+                        <li class="header-items"><a href="./about.html" title="" target="_self" class="header-link">Про нас</a></li>
+                        <li class="header-items"><a href="./price.html" title="" target="_self" class="header-link">Прайс</a></li> 
+                        <li class="header-items"><a href="#" title="" target="_self" class="header-link">Відгуки</a></li> 
+                        <li class="header-items"><a href="#" title="" target="_self" class="header-link">Контакти</a></li> 
+                    </ul>
+            </nav> 
+        </div> 
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="home-text">
+                <h2>Nail care</h2>
+                <p class="text">НАСОЛОДЖУЙТЕСЯ НАЙКРАЩИМ ДОГЛЯДОМ ЗА НІГТЯМИ В КИЄВІ</p>
+                <p>Зробіть свої нігті ідеальними прямо зараз!</p>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="main-button">Запишіться на прийом</button>
+            </div>
+            <div>
+                <img src="./photo/cleanmanicure.jpg" alt="" class="home-img">
+            </div>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                        <img src="./photo/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Ім'я користувача</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Логін</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Запам'ятати мене
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Закрити</button>
+                        <span class="psw">Забули <a href="#" class="psw">пароль?</a></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            </script>
+
+            <section class="section-contacts">
+                <div class="section-text">
+                    <h2>Contacts</h2>
+                    <p class="text">ЗВ'ЯЖІТЬСЯ З НАМИ ЗАРАЗ</p>
+                    <p>Не забудьте записатися на прийом, щоб отримати найкращий сервіс!</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.6708670068956!2d30.31904385241034!3d50.43473505129345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb4050ebf8ad%3A0x22b249244593b61f!2z0YPQuy4g0JLQvtC70YvQvdGM0YHQutCw0Y8sIDgsINCf0LXRgtGA0L7Qv9Cw0LLQu9C-0LLRgdC60LDRjyDQkdC-0YDRidCw0LPQvtCy0LrQsCwg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMDgxMzA!5e0!3m2!1sru!2sua!4v1708717023325!5m2!1sru!2sua" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contacts">
+                    <div class="ellipse">
+                        <img src="./photo/location.png" alt="" width="148" class="ellipse-img">
+                        <div class="ellipse-contacts">
+                            <p class="ellipse-title">Адреса</p>
+                            <p class="ellipse-text"></p>
+                    </div>
+                    </div>
+                    <div class="ellipse">
+                        <img src="./photo/phone.png" alt="" width="132" class="ellipse-img-phone">
+                        <div class="ellipse-contacts">
+                            <p class="ellipse-title">Телефон</p>
+                            <p class="ellipse-text">+380 (97) 020 22 58</p>
+                    </div>
+                    </div>
+                    <div class="ellipse">
+                        <img src="./photo/instagram.png" alt="" width="225" class="ellipse-img-instagram">
+                        <div class="ellipse-contacts">
+                            <p class="ellipse-title">Інстаграм</p>
+                            <p class="ellipse-text">@kondratiuk_nails_room</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <ul class="footer-list"> 
+                <li class="footer-items"><a href="#" title="" target="_self" class="footer-link">Головна</a></li> 
+                <li class="footer-items"><a href="#" title="" target="_self" class="footer-link">Послуги</a></li> 
+                <li class="footer-items"><a href="#" title="" target="_self" class="footer-link">Про нас</a></li>
+                <li class="footer-items"><a href="#" title="" target="_self" class="footer-link">Прайс</a></li> 
+                <li class="footer-items"><a href="#" title="" target="_self" class="footer-link">Відгуки</a></li> 
+                <li class="footer-items"><a href="#" title="" target="_self" class="footer-link">Контакти</a></li> 
+            </ul>
+    </nav>
+    <nav>
+        <ul class="nav-ul">
+            <li>
+                <address>
+                    <p>© Created by</p>
+                </address>
+            </li>
+            <li>
+                <address class="footer-adress">
+                    <p> All rights Reserved</p>
+                </address>
+            </li>
+        </ul>
+    </nav>
+    </footer>
+</body>
+</html>
